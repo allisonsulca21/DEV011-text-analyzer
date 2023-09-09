@@ -9,5 +9,27 @@
 
 <body>
   <script src="index.js" type="module"></script>
+  <header>
+    <h1> Analizador de texto </h1>
+  </header>
+     <form>
+      <ul class="box">
+        <li class="li-box" data-testid="word-count"> Palabras:</li>
+        <li class="li-box" data-testid="character-count"> Carácteres: </li>  
+        <li class="li-box" data-testid="character-no-spaces-count"> Carácteres sin espacio: </li>
+        <li class="li-box" data-testid="word-lenght-average"> Promedio longitud: </li>  
+        <li class="li-box" data-testid="number-count"> Números: </li>  
+        <li class="li-box" data-testid="number-sum"> Suma de números: </li>
+      </ul>
+      <textarea keyup="textArea" name="user-input"></textarea>
+      <br>
+      <button id="reset-button" type="reset" value="Limpiar métricas"> Limpiar métricas </button>
+     </form>
 </body>
+<br>
+<footer>
+    <p> By: Allison Sulca </p>
+ </footer>
 </html>
+
+<!--id="textAreaInp" /type="reset"   onclick="resetValues()"-->
