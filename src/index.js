@@ -125,7 +125,7 @@ textAreaInp.addEventListener('keyup', () => {
   averageWordLength(wordAverageLength);
 })
 // ---FROM INDEX TO DISPLAY
-const wordLengthAverage = document.querySelector('[data-testid="word-lenght-average"]');
+const wordLengthAverage = document.querySelector('[data-testid="word-length-average"]');
 
 function actualizarAverageWordLength(textAreaInp, listItem) {
   const averageWord = textAreaInp.value;
@@ -177,7 +177,7 @@ const textLengthIt0 = document.querySelector('[data-testid="character-count"]');
 const textcharCoExSpaces0 = document.querySelector('[data-testid="character-no-spaces-count"]');
 const cuentaNumbers0 = document.querySelector('[data-testid="number-count"]');
 const textAreaSumNumbers0 = document.querySelector('[data-testid="number-sum"]');
-const wordLengthAverage0 = document.querySelector('[data-testid="word-lenght-average"]');
+const wordLengthAverage0 = document.querySelector('[data-testid="word-length-average"]');
 
 // function para resetear valores
 function resetValues(){

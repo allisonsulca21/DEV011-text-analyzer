@@ -31,8 +31,8 @@ const analyzer = {
 
 
   getAverageWordLength: (text) => { 
-    // TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const splitMyText = text.split(" "); //
+    // TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`. 
+    const splitMyText = text.split(" "); // separar mi texto
     const filterMyText = splitMyText.filter(Boolean);
     let wordAverageSum = 0;
 
@@ -41,8 +41,9 @@ const analyzer = {
       wordAverageSum = wordAverageSum + wordAverLength;
     }
     const averageLength = Number((wordAverageSum / filterMyText.length).toFixed(2));
-    console.log(averageLength);
+    //console.log(averageLength);
     return averageLength;
+    
     
     //primer code
     //const wordSeparation = text.split(/\s+/); // Dividir las palabras del texto con expresión regular
