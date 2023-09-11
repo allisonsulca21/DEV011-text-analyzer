@@ -28,8 +28,6 @@ const analyzer = {
     return textCharacterLength;
   },
 
-
-
   getAverageWordLength: (text) => { 
     // TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`. 
     const splitMyText = text.split(" "); // separar mi texto
@@ -43,7 +41,7 @@ const analyzer = {
     const averageLength = Number((wordAverageSum / filterMyText.length).toFixed(2));
     //console.log(averageLength);
     return averageLength;
-    
+  }, 
     
     //primer code
     //const wordSeparation = text.split(/\s+/); // Dividir las palabras del texto con expresión regular
@@ -60,9 +58,7 @@ const analyzer = {
     //return roundedAverage;
     //} else {
     //return 0;
-    //}
-    
-  },
+    //} 
 
   getNumberCount: (text) => {
     // TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
@@ -94,8 +90,8 @@ const analyzer = {
       }
     }
     return numberSum;
-    
-    
+  }
+};  
     //const numberSum = text.match(/\d+/g);
     //const numberSum = text.match(/\d/g);
     //let suma = 0;
@@ -107,7 +103,5 @@ const analyzer = {
     //}
     //return suma;
   //},
-  }
-};
 
 export default analyzer;
