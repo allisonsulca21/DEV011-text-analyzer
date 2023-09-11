@@ -43,22 +43,22 @@ const analyzer = {
     return averageLength;
   }, 
     
-    //primer code
-    //const wordSeparation = text.split(/\s+/); // Dividir las palabras del texto con expresión regular
-    //let wordLengthSum = 0; // Iniciemos la suma de longitudes con el valor 0 (This variable is likely used to store the length or count of words in the program.)
-    //for (const words of wordSeparation) { // (For) Iterar palabras y sumar sus longitudes
-    //wordLengthSum += words.length; // Es una forma abreviada de escribir wordLengthSum = wordLengthSum + words.length;
-    //console.log(wordLengthSum + "wordLengthSum");
+  //primer code
+  //const wordSeparation = text.split(/\s+/); // Dividir las palabras del texto con expresión regular
+  //let wordLengthSum = 0; // Iniciemos la suma de longitudes con el valor 0 (This variable is likely used to store the length or count of words in the program.)
+  //for (const words of wordSeparation) { // (For) Iterar palabras y sumar sus longitudes
+  //wordLengthSum += words.length; // Es una forma abreviada de escribir wordLengthSum = wordLengthSum + words.length;
+  //console.log(wordLengthSum + "wordLengthSum");
     
-    //}
-    //if (wordSeparation.length > 0) { // Calculamos la long. media diviendo la suma x el nro de palabras
-    //const wordAverageLength = wordLengthSum / wordSeparation.length; // Diviión en js: /.
-    //const roundedAverage = Math.round(wordAverageLength * 100)/ 100;
-    //console.log("resultado1", roundedAverage);
-    //return roundedAverage;
-    //} else {
-    //return 0;
-    //} 
+  //}
+  //if (wordSeparation.length > 0) { // Calculamos la long. media diviendo la suma x el nro de palabras
+  //const wordAverageLength = wordLengthSum / wordSeparation.length; // Diviión en js: /.
+  //const roundedAverage = Math.round(wordAverageLength * 100)/ 100;
+  //console.log("resultado1", roundedAverage);
+  //return roundedAverage;
+  //} else {
+  //return 0;
+  //} 
 
   getNumberCount: (text) => {
     // TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
@@ -92,16 +92,16 @@ const analyzer = {
     return numberSum;
   }
 };  
-    //const numberSum = text.match(/\d+/g);
-    //const numberSum = text.match(/\d/g);
-    //let suma = 0;
-    //if (numberSum){
-    //for (let numbers of numberSum) {
-    //suma += parseFloat(numbers);
-    //suma += parseInt(numbers,10);
-    //}
-    //}
-    //return suma;
+  //const numberSum = text.match(/\d+/g);
+  //const numberSum = text.match(/\d/g);
+  //let suma = 0;
+  //if (numberSum){
+  //for (let numbers of numberSum) {
+  //suma += parseFloat(numbers);
+  //suma += parseInt(numbers,10);
+  //}
+  //}
+  //return suma;
   //},
 
 export default analyzer;
