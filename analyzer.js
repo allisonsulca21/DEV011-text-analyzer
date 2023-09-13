@@ -23,10 +23,10 @@ const analyzer = {
     return textCharacterLength;
   },
 
-    //const cleanText = text.trim(); // se utiliza para eliminar espacios tendo delante como detrás de nuestro texto
-    //const spacesBetweenText = /(?:^|\s)(\d+\.\d+|\d+)(?=|\s)/g;
-    //const result= text.match(spacesBetweenText);
-    //const cleanExludingSpaces = cleanText.replace(/[^\w\s]/g, ""); // Usar una expresión regular para puntos, comas, epacios (dentro de mi array)
+  //const cleanText = text.trim(); // se utiliza para eliminar espacios tendo delante como detrás de nuestro texto
+  //const spacesBetweenText = /(?:^|\s)(\d+\.\d+|\d+)(?=|\s)/g;
+  //const result= text.match(spacesBetweenText);
+  //const cleanExludingSpaces = cleanText.replace(/[^\w\s]/g, ""); // Usar una expresión regular para puntos, comas, epacios (dentro de mi array)
 
   getAverageWordLength: (text) => { 
     // TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`. 
@@ -71,14 +71,14 @@ const analyzer = {
       return 0;
     }
   },
-    // ESTA FUNCIÓN AYUDA A CONTAR NÚMEROS PERO SOLO CUANDO TIENEN ESPACIO DE POR MEDIO, MIENTRAS TANTO NO:(
-    //const numbersMatches = text.match(/\d+\.\d+|\d+/g); // ya encontré la manera si hago esto: (/\d+/g) ahí me cuenta por strings pero sin el + cuenta cada uno así sea 34 o 678 por dígito.
-    // PERO ESTA OTRA FUNCIÓN AYUDA A CONTAR NÚMEROS COMO '34' AÚN SEAN CON ESPACIO DE POR MEDIO O NO, ME CONTARÁ 2 DIGÍTOS
-    // const digits = text.split('').filter(characterExSp => /\d/.test(characterExSp)); 
-    //return textToNumber !== undefined? textToNumber.length: 0; // ?? ayuda a encadenar !== undefined? textToNumber.length: 0;
-    // return digits.length;
+  // ESTA FUNCIÓN AYUDA A CONTAR NÚMEROS PERO SOLO CUANDO TIENEN ESPACIO DE POR MEDIO, MIENTRAS TANTO NO:(
+  //const numbersMatches = text.match(/\d+\.\d+|\d+/g); // ya encontré la manera si hago esto: (/\d+/g) ahí me cuenta por strings pero sin el + cuenta cada uno así sea 34 o 678 por dígito.
+  // PERO ESTA OTRA FUNCIÓN AYUDA A CONTAR NÚMEROS COMO '34' AÚN SEAN CON ESPACIO DE POR MEDIO O NO, ME CONTARÁ 2 DIGÍTOS
+  // const digits = text.split('').filter(characterExSp => /\d/.test(characterExSp)); 
+  //return textToNumber !== undefined? textToNumber.length: 0; // ?? ayuda a encadenar !== undefined? textToNumber.length: 0;
+  // return digits.length;
 
-    getNumberSum: (text) => { 
+  getNumberSum: (text) => { 
     // TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     const textFilter = text.split(" ").filter(Boolean); //c
     let numberSum = 0;  //Asignamos un valor 0 inicial a nuestra suma
@@ -92,16 +92,16 @@ const analyzer = {
   }
 };  
   
-  //const numberSum = text.match(/\d+/g);
-  //const numberSum = text.match(/\d/g);
-  //let suma = 0;
-  //if (numberSum){
-  //for (let numbers of numberSum) {
-  //suma += parseFloat(numbers);
-  //suma += parseInt(numbers,10);
-  //}
-  //}
-  //return suma;
-  //},
+//const numberSum = text.match(/\d+/g);
+//const numberSum = text.match(/\d/g);
+//let suma = 0;
+//if (numberSum){
+//for (let numbers of numberSum) {
+//suma += parseFloat(numbers);
+//suma += parseInt(numbers,10);
+//}
+//}
+//return suma;
+//},
 
 export default analyzer;
