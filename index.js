@@ -1,33 +1,31 @@
 import analyzer from './analyzer.js';
 
-// variables geenrales: 
-
 // TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
 // --------------------WORD COUNT: SELECTORES/EVENTOS DOM--------------------
 // ---FROM ANALYZER TO INDEX 
-const textAreaInp = document.querySelector("textarea");
+const textAreaInp = document.querySelector("textarea"); //buscaremos con querySelector nuestro selector* textarea en nuestro docu html
 // function para acceder a los valores
-function textArea(textAreaInp) {
-  const inputText = textAreaInp.value;
-  const resultTextArea = analyzer.getWordCount(inputText);
-  return resultTextArea;  //console.log(resultTextArea);
+function textArea(textAreaInp) { //(textAreaInp) es el argumnto de nuestra funcion
+  const inputText = textAreaInp.value; //obtendremos el valor de nuestra constante anterior (textAreaInp) 
+  const resultTextArea = analyzer.getWordCount(inputText); //llamaremos nuestra función del analyzer y lo almacenaremos en nuestra constante
+  return resultTextArea;  //console.log(resultTextArea); //devolveremos nuestro valor ya calculado de nuestro <textarea>
 }
-// escuchar textAreaInp, y luego keyup para poder ponerlo a
+// añadiremos el evento keyup mientras se genere una acción se ejecutará la función
 textAreaInp.addEventListener('keyup', () => {
-  textArea(textAreaInp); //escucho a mi const
+  textArea(textAreaInp); //aquí llamamos a nuestra función textarea y pasará como argumento textAreaInp
 })
 // ---FROM INDEX TO DISPLAY 
-const wordCountIt = document.querySelector('[data-testid="word-count"]');
+const wordCountIt = document.querySelector('[data-testid="word-count"]'); //buscaremos nuestro atributo en nuestro html y lo almacenamos
 
-textAreaInp.addEventListener('keyup', () => {
-  actualizarMetricas(textAreaInp, wordCountIt);
-});
+textAreaInp.addEventListener('keyup', () => { //utilizamos un evento keyup para llamar a nuestra función 
+  actualizarMetricas(textAreaInp, wordCountIt); // actualizarMetricas y le pasaremos dos argumentos (elem textarea, y lo mostramemos aquí)
+}); //Este código escucha eventos keyup en un <textarea> y cada vez que el usuario suelta una tecla, actualiza un elemento en la página con el conteo de palabras calculado a partir del texto ingresado en el <textarea>
 
-function actualizarMetricas(textAreaInp, listItem) {
-  const inputText = textAreaInp.value;
-  const wordCount = analyzer.getWordCount(inputText);
-  listItem.textContent = `Palabras: ${wordCount}`;
+function actualizarMetricas(textAreaInp, listItem) { //
+  const inputText = textAreaInp.value; // con esta const obtendremos el valor actuañ de nuestro textAreaInp
+  const wordCount = analyzer.getWordCount(inputText); // llamaremos nuestra función del analyzer, lo almacenaremos y devolverá el resultado
+  listItem.textContent = `Palabras: ${wordCount}`; // mostraremos el contenido de nuestro texto, como resultado el número de palabras del analyzer
 }
 // --------------------------------------------------------------------------------
 

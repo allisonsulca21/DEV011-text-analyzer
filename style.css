@@ -1,55 +1,21 @@
-*{
+*{ /*selector universal*/
     background-color: beige;
     /*background-color: #AFD796;*/
     align-content: center;
 }
-body {
-    display: grid;
-    place-items: center;
-}
-header{
+
+header{ /*selector de tipo*/
     /*padding: 7px;*/
     color: #A6D18C;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
 }
 
-/*form > textarea {
-    background-color: whitesmoke;
-    font-size: large;
-    width: 800px;
-    height: 200px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 1px #999;
-}*/
-textarea[name="user-input"] {
-    display: block;
-    background-color: whitesmoke;
-    font-size: large;
-    width: 800px;
-    height: 200px;
-    margin-bottom: 10px;
-    margin-top: 2px;
-    margin-left: 200px;
-    margin-right: 200px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px #999;
+body { 
+    display: grid;
+    place-items: center;
 }
-/*form > button {
-    margin: 0 auto;
-    background-color: #A6D18C;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-    font-weight:bold;
-    border-color:#A6D18C;
-    /* border-radius: 20px;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 0.5em 1.2em;
-}*/
+
 ul{
     display: block;
     list-style-type: disc;
@@ -60,7 +26,7 @@ ul{
     margin-left: 100px;
 }
 
-.li-box{
+.li-box{ /*selector de clase*/
     font-style: italic;
     color: rgb(63, 58, 58);
     font-weight: bold;
@@ -78,12 +44,19 @@ ul{
     margin-right: 3px;
     align-items: center; 
 }
-footer {
-    color: rgb(66, 71, 66);
-    font-size: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    font-weight: bold;
+
+textarea[name="user-input"] { /*selector de clase*/
+    display: block;
+    background-color: whitesmoke;
+    font-size: large;
+    width: 800px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #999;
 }
 
 #reset-button {
@@ -98,4 +71,12 @@ footer {
     display: flex;
     align-items: center;
     padding: 0.5em 1.2em;
+}
+
+footer {
+    color: rgb(66, 71, 66);
+    font-size: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
 }
