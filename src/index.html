@@ -13,22 +13,22 @@
     <h1> Analizador de texto </h1>
   </header>
      <form>
-      <ul class="box">
+      <ul> <!-- usamos <ul> como nido de nuestros <li> hijos -->
         <li class="li-box" data-testid="word-count"> Palabras:</li>
         <li class="li-box" data-testid="character-count"> Carácteres: </li>  
         <li class="li-box" data-testid="character-no-spaces-count"> Carácteres sin espacio: </li>
         <li class="li-box" data-testid="word-length-average"> Promedio longitud: </li>  
         <li class="li-box" data-testid="number-count"> Números: </li>  
         <li class="li-box" data-testid="number-sum"> Suma de números: </li>
-      </ul>
-      <textarea keyup="textArea" name="user-input"></textarea>
-      <br>
+      </ul>    <!-- usamos keyup en nuestro textarea para poder escuchar nuestro evento -->
+      <textarea keyup="textArea" name="user-input" placeholder="Escribe tu texto aquí"></textarea>
+      <br>     <!-- botón type: reseteo, con valor: limpiar métricas -->
       <button id="reset-button" type="reset" value="Limpiar métricas"> Limpiar métricas </button>
      </form>
 </body>
 <br>
 <footer>
-    <p> By: Allison Sulca </p>
+    <p> Made by: Allison Sulca </p>
  </footer>
 </html>
 
